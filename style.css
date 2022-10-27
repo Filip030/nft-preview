@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Overpass&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(217, 54%, 11%) !important;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+.main {
+  width: 100wv;
+  max-width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(216, 50%, 16%);
+  padding: 1rem;
+  margin: 1.25rem;
+  border-radius: 1.25rem;
+}
+
+.containerImage {
+  position: relative;
+}
+
+.containerImageHover {
+  position: absolute;
+  width: 252px;
+  height: 252px;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(178, 100%, 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border-radius: 8px;
+}
+
+.containerImageHover:hover {
+  opacity: 0.5;
+}
+
+.containerImage img:nth-child(2) {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 0.5rem;
+}
+
+.container-text h2 a {
+  font-size: 1.3rem;
+  text-align: left;
+  font-weight: 600;
+  margin: 0.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.container-text p {
+  font-size: 0.93rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+.main-description {
+  color: hsl(215, 51%, 70%);
+}
+
+.price-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-date > * {
+  margin: 0;
+}
+
+.price-date p:nth-child(1) {
+  color: hsl(178, 100%, 50%);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.price-date p:nth-child(1)::before {
+  content: url(./images/icon-ethereum.svg);
+  vertical-align: middle;
+  padding-right: 4px;
+}
+
+.price-date p:nth-child(2) {
+  color: hsl(215, 51%, 70%);
+  font-size: 0.9rem;
+}
+.price-date p:nth-child(2)::before {
+  content: url(./images/icon-clock.svg);
+  vertical-align: middle;
+  padding-right: 4px;
+}
+
+hr {
+  width: 90%;
+  border-color: hsl(215, 51%, 70%);
+  margin-bottom: 15px;
+}
+
+.creatorInfo {
+  display: flex;
+  align-items: center;
+}
+
+.creatorInfo > p {
+  color: hsl(215, 51%, 70%);
+}
+
+.creatorInfo a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.creatorInfo img {
+  width: 12%;
+  height: 12%;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+.creatorInfo a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
